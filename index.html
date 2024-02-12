@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8" />
     
-    <meta http-equiv="Content-Security-Policy: default-src 'self' https://kell-c.github.io/* 'unsafe-inline' https://vitrine-backend.onrender.com; script-src https://kell-c.github.io/* 'self' 'unsafe-inline' https://vitrine-backend.onrender.com; style-src 'self' 'unsafe-inline' https://kell-c.github.io/*https://vitrine-backend.onrender.com;"/>
-
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline';
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' https://kell-c.github.io;
+    ">
     <title>vitrine</title>
     <base href="/vitrineweb/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
